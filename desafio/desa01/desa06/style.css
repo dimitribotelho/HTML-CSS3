@@ -1,0 +1,16 @@
+body{
+  background: black;
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+}
+
+p {
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
