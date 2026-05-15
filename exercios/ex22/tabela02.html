@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Grande</title>
+    <style>
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        td,th{
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+
+        th{
+            color: white;
+        }
+
+        thead, tfoot{
+            background-color: rgb(111, 107, 107);
+        }
+
+        caption{
+            background-color: rgba(169, 169, 169, 0.468);
+            
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Os Maiores Campeoes do Campeonato de Construtores da F1</caption>
+        <thead>
+            <tr>
+                <th scope="col">Equipes</th>
+                <th scope="col">Titulos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ferrari</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Mclaren</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>Mercedes</td>
+                <td> 9</td>
+            </tr>
+             <tr>
+                <td>Redbull</td>
+                <td> 8</td>
+            </tr>
+             <tr>
+                <td>Willians</td>
+                <td> 7</td>
+            </tr>
+             <tr>
+                <td>Lotus</td>
+                <td> 6 </td>
+            </tr>
+            <tr>
+                <td>Brabham</td>
+                <td> 4 </td>
+            </tr>
+            <tr>
+                <td>Alfa romeo</td>
+                <td rowspan="6"> 2 </td>
+            </tr>
+            <tr>
+                <td>Masserati</td>
+            </tr>
+            <tr>
+                <td>Cooper</td>
+            </tr>
+            <tr>
+                <td>Tyrrell</td>
+            </tr>
+            <tr>
+                <td>Benetton</td>
+            </tr>
+            <tr>
+                <td>Renault</td>
+            </tr>
+            <tr>
+                <td>BRM</td>
+                <td rowspan="3"> 1 </td>
+            </tr>
+            <tr>
+                <td>Matra</td>
+            </tr>
+            <tr>
+                <td>Brawn</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Equipes</th>
+                <th>15</th>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
