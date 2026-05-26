@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+@media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main{
+        border: 1px solid black;
+    }
+
+    main::after{
+        content: 'essa impresssao foi feita por Dimitri Botelho';
+    }
+    img#cel {display:none;}
+    img#tab{display:none;}
+    img#imp{display: inline;}
+    img#tv{display:none;}
+    img#pc{display:none;}
+
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    body{
+        background: black url(../imagens/back-tablet.jpg);
+    }
+    img#cel {display:none;}
+    img#tab{display:inline;}
+    img#imp{display: none;}
+    img#tv{display:none;}
+    img#pc{display:none;}
+}
+
+@media screen and (min-width:992px) and (max-width:1200px){
+    body{
+        background: black url(../imagens/back-pc.jpg);
+        background-size: cover;
+    }
+    img#cel {display:none;}
+    img#tab{display:none;}
+    img#imp{display: none;}
+    img#tv{display:none;}
+    img#pc{display:inline;}
+}
+
+@media screen and (min-width:1200px){
+    body{
+        background: black url(../imagens/back-tv.jpg);
+        background-size: cover;
+    }
+    img#cel {display:none;}
+    img#tab{display:none;}
+    img#imp{display: none;}
+    img#tv{display:inline;}
+    img#pc{display:none;}
+
+}
