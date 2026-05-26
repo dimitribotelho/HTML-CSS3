@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media.css">
+</head>
+<body onresize="mudou()">
+    <header>
+        <h1>Meu site</h1>
+        <span id="burguer" onclick="menu()">☰</span>
+        <menu id="imenu">
+            <ul>
+                <li><a href="#">Opçao 1</a></li>
+                <li><a href="#">Opçao 2</a></li>
+                <li><a href="#">Opçao 3</a></li>
+                <li><a href="#">Opçao 4</a></li>
+                <li><a href="#">Opçao 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando media queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure a voluptatem quia reprehenderit nam dolor laboriosam modi ad enim rerum excepturi accusamus adipisci est quisquam nobis, explicabo nesciunt? Consequuntur, hic. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus sapiente magnam necessitatibus harum labore facere. Magnam, veritatis aut eveniet culpa non, enim mollitia fugit incidunt saepe repellendus quod blanditiis obcaecati.</p>
+            
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia in voluptatibus iusto voluptates hic itaque laudantium magnam veritatis ullam! Voluptatem dicta similique expedita quas dolorem? Maiores recusandae ullam in maxime? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel officiis dignissimos possimus reiciendis repellat sed totam aut laudantium animi facilis. Cum ducimus nobis unde minus officia. Ut expedita animi repellendus.</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est at odit expedita debitis quod dolor laboriosam totam! Quod harum fugit eum quidem? Dolorem ex rerum iste eaque ea aperiam recusandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci voluptas accusamus vitae deleniti voluptates, delectus dignissimos cumque odio, quasi obcaecati dolores, natus reiciendis iure! Deserunt libero beatae nesciunt expedita nihil.</p>
+        </article>
+    </main>
+    <script>
+
+        function mudou() {
+            if(window.innerWidth >= 768) {
+                imenu.style.display = 'block'
+            }
+
+        }
+
+
+        function menu(){
+            if (imenu.style.display == 'block') {
+                imenu.style.display = 'none'
+            } else {
+                imenu.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
