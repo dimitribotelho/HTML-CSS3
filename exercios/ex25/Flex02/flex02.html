@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        div.flex{
+            background-color: aqua;
+            display: flex;
+            margin-bottom: 20px;
+            
+        }
+
+        div.flex2{
+            background-color: aqua;
+            display: flex;
+            flex-direction: row-reverse;
+            margin-bottom: 20px;
+            
+        }
+
+        div.flex3{
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            width: 200;
+        }
+
+        div.flex4{
+            background-color: aqua;
+            display: flex;
+            flex-direction:column-reverse;
+            margin-bottom: 20px;
+            
+        }
+
+        div.item{
+            background-color: orange;
+            border: 1px black solid;
+            padding: 10px;
+            text-align: center;
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="item">a</div>
+        <div class="item">b</div>
+        <div class="item">c</div>
+        <div class="item">d</div>
+        <div class="item">e</div>
+        <div class="item">f</div>
+    </div>
+    <div class="flex2">
+        <div class="item">a</div>
+        <div class="item">b</div>
+        <div class="item">c</div>
+        <div class="item">d</div>
+        <div class="item">e</div>
+        <div class="item">f</div>
+    </div>
+     <div class="flex3">
+        <div class="item">a</div>
+        <div class="item">b</div>
+        <div class="item">c</div>
+        <div class="item">d</div>
+        <div class="item">e</div>
+        <div class="item">f</div>
+    </div>
+     <div class="flex4">
+        <div class="item">a</div>
+        <div class="item">b</div>
+        <div class="item">c</div>
+        <div class="item">d</div>
+        <div class="item">e</div>
+        <div class="item">f</div>
+    </div>
+</body>
+</html>
