@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itens de grid</title>
+    <style>
+        .container{
+            display: grid;
+            border: 1px solid black;
+            grid-template: repeat(3,100px)/repeat(4,1fr);
+        }
+
+        .caixa1{
+            border: 1px solid red;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end:5;
+            text-align: center;
+        }
+        .caixa2{
+            border: 1px solid red;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end:3;
+            text-align: center;
+        }
+
+        .caixa3{
+            border: 1px solid red;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 5;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="caixa1">Caixa 1</div>
+        <div class="caixa2">Caixa2</div>
+        <div class="caixa3">Caixa3</div>
+    </div>
+    
+</body>
+</html>
